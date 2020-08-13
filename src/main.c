@@ -28,6 +28,8 @@ int Verificaprimo(int num){
 	           }
 	    	if(num>=2){
 			a=1;//é primo
+			}else{
+			a=0;
 			}
 		return a;  			
 	}
@@ -60,8 +62,7 @@ nprocessos = (int*)mmap(NULL, sizeof(int)*100, protection, visibility,0,0);
                         scanf("%c",&lixo);
                         (*i)++;
                         }while (lixo !='\n');
-//for (int j=0;j<(*i);j++) printf("%d\t",var[j]);	
-//printf("li todos os nu\n");
+	
 	//cria proecssos filhos
 		pid_t filho[3];
 	
